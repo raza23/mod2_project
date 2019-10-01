@@ -1,0 +1,7 @@
+<h1>All Photographers</h1>
+
+<% @photographers.each do |p| %>
+  <h4>
+    <%= link_to p.name, photographer_path(p) %>
+  </h4>
+<% end %>
